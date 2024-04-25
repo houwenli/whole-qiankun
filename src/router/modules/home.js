@@ -10,11 +10,13 @@ export default [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/home'),
+        component: () => import('@/views/home/index.vue'),
         name: 'index',
         meta: {
           title: '首页',
-          isMain: true
+          isMain: true,
+          isMenu: true,
+          activeMenu: '/index'
         }
       }
     ]

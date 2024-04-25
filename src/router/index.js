@@ -7,6 +7,7 @@ import * as VueRouter from 'vue-router'
  *  activeMenu: '/index'         // 当前激活的菜单
  *  isMain: false                // 是否为主体应用，解决打开不必要的tags
  *  subName: name                // qiankun子应用
+ *  isMenu: 'true'               // 是否菜单
  * }
  */
 

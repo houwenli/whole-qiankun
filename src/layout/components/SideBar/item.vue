@@ -1,6 +1,12 @@
-<script setup>
-const props = defineProps(['foo'])
-console.log(props)
-</script>
+<script>
+import { h } from 'vue'
+export default {
+  setup() {
+    return () => {
+      let hNodes = h('div', '11111', [])
 
-<style></style>
+      return hNodes
+    }
+  }
+}
+</script>
