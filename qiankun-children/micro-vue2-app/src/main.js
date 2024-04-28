@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import * as VueRouter from 'vue-router'
+import VueRouter from 'vue-router'
 import routes from './router';
 
 let router = null;
@@ -12,9 +12,8 @@ Vue.config.productionTip = false
 
 function render(props = {}) {
   const { container } = props;
-
   router = new VueRouter({
-    base: window.__POWERED_BY_QIANKUN__ ? '/app-vue/' : '/',
+    base: window.__POWERED_BY_QIANKUN__ ? `child-${process.env.VUE_APP_SYSTEM}` : '/',
     mode: 'history',
     routes
   })
@@ -26,12 +25,6 @@ function render(props = {}) {
 }
 
 // 独立运行
-if (window.__POWERED_BY_QIANKUN__) {
-  render()
-}
-
-
-
 // 独立运行时
 if (!window.__POWERED_BY_QIANKUN__) {
   render();

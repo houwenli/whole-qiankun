@@ -10,7 +10,6 @@ import '@/assets/styles/index.scss'
 import '@/assets/css/common.css'
 
 import { registerApps } from './qiankun'
-registerApps()
 
 const app = createApp(App)
 
@@ -18,3 +17,5 @@ app.use(router)
 app.use(ElementPlus)
 
 app.mount('#app')
+
+registerApps()

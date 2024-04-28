@@ -20,8 +20,6 @@ const moduleRoutes = moduleFiles.keys().reduce((routes, modulePath) => {
   return routes.concat(moduleRoute)
 }, [])
 
-console.log(555, moduleRoutes)
-
 const router = VueRouter.createRouter({
   // 使用history模式
   history: VueRouter.createWebHistory(),
