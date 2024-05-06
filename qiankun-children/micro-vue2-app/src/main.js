@@ -13,7 +13,7 @@ Vue.config.productionTip = false
 function render(props = {}) {
   const { container } = props;
   router = new VueRouter({
-    base: window.__POWERED_BY_QIANKUN__ ? `child-${process.env.VUE_APP_SYSTEM}` : '/',
+    // base: window.__POWERED_BY_QIANKUN__ ? `child-${process.env.VUE_APP_SYSTEM}` : '/',
     mode: 'history',
     routes
   })

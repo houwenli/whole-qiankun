@@ -25,7 +25,8 @@ const getEntry = port => {
 }
 
 const createApps = systemList.map(({ name, port, ...args }) => {
-  let entry = getEntry(port) + `/child-${name}`
+  // let entry = getEntry(port) + `/child-${name}/`
+  let entry = getEntry(port)
   return {
     name,
     entry,
