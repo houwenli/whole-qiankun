@@ -6,7 +6,7 @@
         <Link v-for="item in menuList" :key="item.name" :to="item.path">
           <el-menu-item :index="item.name">
             <template #title>
-              <el-icon><location /></el-icon>
+              <!-- <el-icon><location /></el-icon> -->
               <span>{{ item.meta.title }}</span>
             </template>
           </el-menu-item>

@@ -7,9 +7,7 @@
         <router-view v-if="route.meta.keepAlive && route.meta.isMain" class="height-abs app-main" :key="key" />
       </keep-alive>
       <router-view class="height-abs app-main" v-if="!route.meta.keepAlive && route.meta.isMain" :key="key" />
-      <template>
-        <div class="subapp-wrap" v-show="!route.meta.isMain" id="subapp-viewport"></div>
-      </template>
+      <div class="subapp-wrap" v-show="!route.meta.isMain" id="subapp-viewport"></div>
     </section>
 
     <section v-else class="default-page">

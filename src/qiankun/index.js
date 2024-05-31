@@ -2,6 +2,8 @@ import { registerMicroApps, start } from 'qiankun'
 
 import { microConfig, finalApps } from './registerApp'
 
+import './globalState'
+
 // 微应用注册
 
 export const registerApps = () => {

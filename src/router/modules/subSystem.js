@@ -3,7 +3,7 @@ import Layout from '@/layout/index.vue'
 import { systemList } from '@/qiankun/systemList'
 
 const createSubRoutes = systemList.map(({ name, title, ...args }) => {
-  let path = `/child-${name}/`
+  let path = `/child-${name}/:pathMatch(.*)`
   return {
     path,
     component: Layout,
@@ -16,5 +16,7 @@ const createSubRoutes = systemList.map(({ name, title, ...args }) => {
     }
   }
 })
+
+console.log(createSubRoutes)
 
 export default [...createSubRoutes]
